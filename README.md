@@ -1,7 +1,7 @@
 # 🌐 Blockora Technical Blueprint
 
 <p align="center">
-  <img src="image/blockora_banner.png" width="600" alt="Blockora Banner">
+  <img src="image/blockora_banner.png" width="200" alt="Blockora Banner">
 </p>
 
 🚀 **Blockora** is a next-generation blockchain protocol designed for **scalability**, **security**, and **community-driven growth**.  
