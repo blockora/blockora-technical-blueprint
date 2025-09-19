@@ -28,3 +28,76 @@ This document describes the **technical architecture**, **consensus mechanism**,
 PoC is a hybrid reputation-based consensus mechanism that uses a **Contribution Score** for each participant. Rewards are distributed proportionally to scores.
 
 **Formula:**
+CSi = α·Vi + β·Ui + γ·Di + δ·Gi + ε·Ci
+Where:
+- `Vi` = Transactions validated
+- `Ui` = Node uptime score (0–1)
+- `Di` = Development contributions (dApps, contracts)
+- `Gi` = Governance participation (votes, proposals)
+- `Ci` = Community engagement (education, bug reports)
+
+**Reward Distribution:**
+Reward_i = (CSi / ΣCS) × Total_Block_Reward
+This ensures that rewards are **fairly distributed** and that power does not centralize over time.
+
+---
+
+## 4. Tokenomics
+
+- **Total Supply:** 1,000,000,000 $BORA (hard-capped)
+- **Allocation:**
+  - 40% – Community Mining & PoC Rewards
+  - 20% – Ecosystem Development (grants, audits)
+  - 15% – Partnerships & Liquidity
+  - 15% – Team & Advisors (3-year vesting)
+  - 10% – Treasury & Emergency Funds
+- **Burning Mechanism:** A fixed % of each transaction fee is burned, reducing supply over time.
+- **Emission Model:** Rewards follow a smooth decay curve (similar to Bitcoin halving) over 10 years.
+
+---
+
+## 5. Security Architecture
+
+- **Key Features:**
+  - Formal verification of smart contracts
+  - AI-based anomaly detection to catch Sybil attacks
+  - Slashing mechanism for malicious validators
+  - Hardware Trusted Execution Environments (TEE) for validator nodes
+  - Bug bounty program with public security audits
+
+---
+
+## 6. Developer Ecosystem
+
+- **SDKs:** JavaScript, Python, Dart SDKs for dApp creation.
+- **Verified Token Factory:** Automated security scans + DAO approval for new tokens.
+- **Testnet:** Public faucet and mining beta available for developers and users.
+- **Documentation:** Open-source developer docs, APIs, and tutorials.
+
+---
+
+## 7. Roadmap (Technical Focus)
+
+- **Phase 0:** Architecture finalization, PoC testnet design.
+- **Phase 1:** Public testnet + mobile mining beta.
+- **Phase 2:** Mainnet launch with genesis block + DAO oversight.
+- **Phase 3:** Cross-chain bridges + DeFi primitives.
+- **Phase 4:** RWA tokenization pilots, enterprise integrations.
+- **Phase 5:** AI-governance + quantum-safe cryptography research.
+
+---
+
+## 8. Future Innovations
+
+- **Quantum-Resistant Cryptography:** Migration to post-quantum signature schemes.
+- **ZK-Rollups:** Layer-2 scalability for microtransactions.
+- **Decentralized Identity (DID):** For user verification without compromising privacy.
+- **AI Governance Agents:** Automated proposal scoring and sentiment analysis.
+
+---
+
+## 9. Conclusion
+
+Blockora is not just a blockchain but a **complete decentralized economy**.  
+Its architecture is designed for **long-term sustainability**, **fair rewards**, and **real-world use cases**.  
+This document will be continuously updated as development progresses to keep the community and developers aligned.
