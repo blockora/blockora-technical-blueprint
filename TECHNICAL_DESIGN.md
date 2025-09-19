@@ -23,23 +23,23 @@ This document describes the **technical architecture**, **consensus mechanism**,
 
 ---
 
-## 3. Consensus – Proof of Contribution (PoC)
+### 3. Consensus – Proof of Contribution (PoC)
 
-PoC is a hybrid reputation-based consensus mechanism that uses a **Contribution Score** for each participant. Rewards are distributed proportionally to scores.
+PoC is a hybrid reputation-based consensus mechanism that uses a Contribution Score for each participant. Rewards are distributed proportionally to scores.
 
-**Formula:**
-CSi = α·Vi + β·Ui + γ·Di + δ·Gi + ε·Ci
-Where:
-- `Vi` = Transactions validated
-- `Ui` = Node uptime score (0–1)
-- `Di` = Development contributions (dApps, contracts)
-- `Gi` = Governance participation (votes, proposals)
-- `Ci` = Community engagement (education, bug reports)
+Formula:  
+CSi = α·Vi + β·Ui + γ·Di + δ·Gi + ε·Ci  
 
-**Reward Distribution:**
-Reward_i = (CSi / ΣCS) × Total_Block_Reward
-This ensures that rewards are **fairly distributed** and that power does not centralize over time.
+- Vi = Transactions validated  
+- Ui = Node uptime score (0–1)  
+- Di = Development contributions (dApps, contracts)  
+- Gi = Governance participation (votes, proposals)  
+- Ci = Community engagement (education, bug reports)  
 
+Reward Distribution:  
+Rewardᵢ = (CSi / ΣCS) × Total_Block_Reward  
+
+![Consensus Flowchart](images/consensus_flowchart.png)
 ---
 
 ## 4. Tokenomics
